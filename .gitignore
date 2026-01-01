@@ -7,7 +7,10 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+
+# Build output
 dist
 dist-ssr
 *.local
@@ -27,3 +30,10 @@ dist-ssr
 .env
 .env.local
 .env.production
+
+# OS files
+Thumbs.db
+
+# Lock files (keep only package-lock.json)
+yarn.lock
+pnpm-lock.yaml

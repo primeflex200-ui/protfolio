@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import Hyperspeed from './components/Hyperspeed'
-import Lightning from './components/Lightning'
+import LightRays from './components/LightRays'
 import ShinyText from './components/ShinyText'
 import './App.css'
 
@@ -109,7 +109,20 @@ function App() {
       <main>
         <section className="ballpit-mega-section">
           <div className="ballpit-container">
-            <Lightning hue={270} xOffset={0} speed={0.5} intensity={1.2} size={1} />
+            <LightRays 
+              raysOrigin="top-center"
+              raysColor="#00ffff"
+              raysSpeed={1.5}
+              lightSpread={1.5}
+              rayLength={2.5}
+              followMouse={true}
+              mouseInfluence={0.15}
+              noiseAmount={0.05}
+              distortion={0.08}
+              fadeDistance={2.0}
+              saturation={1.2}
+              className="custom-rays"
+            />
           </div>
           
           <div className="ballpit-content">

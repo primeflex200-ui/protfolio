@@ -1,0 +1,10 @@
+.beams-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* keep canvas fill */
+canvas.beams-container {
+  display: block;
+}
